@@ -13,7 +13,7 @@ function AboutMe() {
           />
         <div>
           <h2 className='text-4xl font-bold text-black mb-4'>About me</h2>
-          <p className='text-base lg:text-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          <p className='text-base text-[#27293B] lg:text-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
              Deleniti accusamus unde rerum delectus in, molestias temporibus 
              quaerat at, molestiae dolorum eius vero aliquam tempore nisi 
              non obcaecati cumque quibusdam vitae.

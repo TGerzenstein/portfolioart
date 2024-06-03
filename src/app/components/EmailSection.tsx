@@ -7,8 +7,9 @@ import Image from 'next/image';
 
 function EmailSection() {
   return (
-    <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4'>
-        <div>
+    <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative'>
+      
+        <div className='z-10'>
           <h5 className='text-xl font-bold text-black my-2'>Let is connect</h5>
           <p className='text-[#27293B] mb-4 max-w-md'>
           {" "}

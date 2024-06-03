@@ -7,10 +7,10 @@ import { TypeAnimation } from 'react-type-animation';
 
 function Hero() {
   return (
-    <section>
+    <section className='lg:py-16'>
       <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className="col-span-8 place-self-center text-center sm:text-left">
-          <h1 className="text-4xl lg:text-6xl font-extrabold mb-4">
+        <div className="col-span-8 place-self-center text-center sm:text-left justify-self-start">
+          <h1 className="text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold mb-4">
             <span className='bg-clip-text'> 
             Hello I am {" "}
             <br />

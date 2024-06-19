@@ -5,6 +5,7 @@ import Image from 'next/image';
 
 import { TypeAnimation } from 'react-type-animation';
 
+
 function Hero() {
   return (
     <section className='lg:py-16'>
@@ -16,14 +17,13 @@ function Hero() {
             <br />
             <TypeAnimation
               sequence={[
-                // Same substring at the start will only be typed out once, initially
-                'Tatiana',
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                'Emma',
+                1000, 
                 'Web depeloper',
                 1000,
-                '',
+                'SQL developer',
                 1000,
-                '',
+                'Designer',
                 1000
               ]}
               wrapper="span"
@@ -33,11 +33,10 @@ function Hero() {
             />
             </span>
           </h1>
-          <p className='text-[#27293B] text-base sm:text-lg mb-6 lg:text-xl'>Lorem ipsum dolor sit amet
-           consectetur adipisicing elit. Id aliquid adipisci est nulla 
-           aspernatur, voluptate corrupti deleniti temporibus 
-            accusamus repellat quod non laudantium, iste eaque quis quibusdam 
-            aliquam itaque cum!
+          <p className='text-[#27293B] text-base sm:text-lg mb-6 lg:text-xl'>
+            Competent and dedicated executive web designer with 4+ years of 
+            experience in designing and developing websites and web apps for 
+            the computer network. 
           </p>
           <div>
             <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gray-900 text-white 

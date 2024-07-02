@@ -1,30 +1,40 @@
+"use client";
+
 import React from 'react';
 import Image from 'next/image';
-//import { useState, useTransition } from 'react';
-//import TabButton from './TabButton';
+import { useState, useTransition } from 'react';
+import TabButton from './TabButton';
 
 
-type Course = {
+/* type Course = {
     selectTab: string;
     active: boolean;
     id: number;
 }
+ */
 
+
+const DATA = [
+  {
+    title: "",
+    id: "",
+  }
+]
 
 
 function AboutMe() {
 
-  /* const [tab, setTab] = useState('education');
+  const [tab, setTab] = useState<string>('education');
   //Hook
-  const [isPending, startTransition] = useTransition()
-    */
+  const [isPending, startTransition] = useTransition();
+    
 
- /*  function handleSelectTab(nextTab) {
+  function handleSelectTab(nextTab: string) {
       startTransition(() =>{
         setTab(nextTab);
- 
+      console.log("se selecciona --->", nextTab);
     });
-  } */
+  } 
   
   return (
     <section>
@@ -46,18 +56,29 @@ function AboutMe() {
             initiatives and UX improvement projects.
           </p>
           <div className='flex flex-row mt-8'>
-{/*            <TabButton selectTab={() => handleSelectTab("education")} active={tab === "education"}>
-            Education
-            </TabButton> */}
+            <TabButton selectTab={() => handleSelectTab("education")} active={ tab === "education"}>
+              Education
+            </TabButton> 
+            <TabButton selectTab={() => handleSelectTab("certification")} active={ tab === "certification"}>
+              Certification
+            </TabButton> 
+            <TabButton selectTab={() => handleSelectTab("skills")} active={ tab === "skills"}>
+              Skills
+            </TabButton>
+            <TabButton selectTab={() => handleSelectTab("work")} active={ tab === "work"}>
+              Work Experience
+            </TabButton>  
 
-            <span className='mr-3  text-[#27293B] hover:text-[#626577] border-b border-gray-800'>
+
+
+           {/*  <span className='mr-3  text-[#27293B] hover:text-[#626577] border-b border-gray-800'>
               Education</span>
             <span className='mr-3  text-[#27293B] hover:text-[#626577]'>
               Certification</span>
             <span className='mr-3  text-[#27293B] hover:text-[#626577]'>
               Skills</span>
             <span className='mr-3  text-[#27293B] hover:text-[#626577]'>
-              Experiencie</span>
+              Experiencie</span> */}
           </div>
         </div>
         </div>

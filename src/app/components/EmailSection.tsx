@@ -6,9 +6,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 function EmailSection() {
+
   return (
     <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative'>
-      
         <div className='z-10'>
           <h5 className='text-xl font-bold text-black my-2'>Let is connect</h5>
           <p className='text-[#27293B] mb-4 max-w-md'>
@@ -41,7 +41,8 @@ function EmailSection() {
         <div>
           <form action="" className='flex flex-col'>
              <div className='mb-6'>
-                <label htmlFor='email' className='text-[#27293B] block mb-2 text-sm font-medium'>Your email</label>
+                <label htmlFor='email' 
+                       className='text-[#27293B] block mb-2 text-sm font-medium'>Your email</label>
                 <input type="email"
                         id='email'
                         required
@@ -50,7 +51,8 @@ function EmailSection() {
                 />
              </div>
              <div className='mb-6'>
-                <label htmlFor='subject' className='text-[#27293B] block mb-2 text-sm font-medium'>Subject</label>
+                <label htmlFor='subject' 
+                       className='text-[#27293B] block mb-2 text-sm font-medium'>Subject</label>
                 <input type="text"
                         id='subject'
                         required

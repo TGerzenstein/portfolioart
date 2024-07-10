@@ -3,7 +3,7 @@ import EmailSection from "./components/EmailSection";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-
+import Projects from "./components/Projects";
 
 export default function Home() {
   return (
@@ -12,6 +12,8 @@ export default function Home() {
       <div className="container mt-24 mx-auto px-16 py-6">
         <Hero />
         <AboutMe />
+        
+        <Projects />
         <EmailSection />
       </div>
         <Footer />           

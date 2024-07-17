@@ -1,5 +1,8 @@
 import React from 'react'
 import Link from 'next/link';
+import GitIcon from '../../../public/githubprojects.svg';
+import Image from 'next/image';
+
 
 function ProjectCard({ imgUrl, title, description }) {
   return (
@@ -14,10 +17,14 @@ function ProjectCard({ imgUrl, title, description }) {
             className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
           >
           </Link>
+
           <Link
             href='https://github.com'
-            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
-          >
+            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link">
+          <Image 
+            src={GitIcon}
+            alt="Github icon"
+          />
           </Link>
         </div>
       </div>
